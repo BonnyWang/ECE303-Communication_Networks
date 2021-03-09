@@ -21,6 +21,10 @@ else:
     # No port specified 
     portRange = [1,1024]
 
+if len(sys.argv) < 2:
+    print("WARN: Please enter the hostname")
+    sys.exit()
+
 host = socket.gethostbyname(sys.argv[1])  
 
 
